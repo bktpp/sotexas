@@ -1,0 +1,189 @@
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-family: "Lato";
+}
+
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+table,
+th,
+td {
+  border: 1px solid #000;
+  padding: 5px;
+  border-collapse: collapse;
+}
+
+input[type="text"],
+input[type="email"],
+textarea {
+  margin-bottom: 10px;
+}
+
+.navbar {
+  gap: 3rem;
+  display: flex;
+  padding: 1.2rem;
+  color: #252b33;
+  align-items: center;
+  justify-content: flex-end;
+  text-transform: uppercase;
+  background-color: #fafafae6;
+  box-shadow: 0 0px 5px rgba(109, 109, 109, 0.7);
+}
+
+.navbar-logo {
+  margin-right: auto;
+}
+
+.navbar-links {
+  gap: 2rem;
+  display: flex;
+}
+
+.navbar-links a {
+  transition: all 0.2s;
+}
+
+.navbar-links a:hover {
+  transform: translateY(-3px) scale(1.1);
+}
+
+.container {
+  display: flex;
+  min-height: 100vh;
+}
+
+.sidebar {
+  gap: 4rem;
+  width: 20%;
+  min-height: 800px;
+  display: flex;
+  color: #fafafae6;
+  align-items: center;
+  flex-direction: column;
+  padding: 6rem 1rem 1rem;
+  text-transform: uppercase;
+  background-color: #252b33;
+  justify-content: flex-start;
+  float: left;
+}
+
+.sidebar-links {
+  gap: 3rem;
+  display: flex;
+  margin-top: 1rem;
+  flex-direction: column;
+}
+
+/* Position absolute with main class as parent and main-content class as child */
+.main {
+  gap: 4rem;
+  width: 70%;
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  margin: 0 auto;
+  z-index: -1000;
+  color: #252b33;
+  position: relative;
+  padding: 1rem 3rem;
+  background-color: #f5f5f5e6;
+}
+
+.main-header {
+  padding: 4rem 2rem 1rem;
+  text-align: center;
+  margin-bottom: 0;
+}
+
+.main-header h1 {
+  font-size: 3rem;
+  font-weight: 400;
+  margin-bottom: 1rem;
+  letter-spacing: 4px;
+  text-transform: uppercase;
+}
+
+.main-caption {
+  font-size: 0.9rem;
+}
+
+.info-list {
+  display: inline-block;
+  padding: 2rem;
+}
+
+.income-table {
+  margin: 2rem 8rem;
+  text-align: center;
+}
+
+.main-content {
+  text-align: left;
+  line-height: 1.5;
+  letter-spacing: 0.5px;
+}
+
+
+ /* Position absolute & relative are done with form and form container below */
+.main-form-container {
+  z-index: 2;
+  border: 1px rgba(109, 109, 109, 0.7) solid;
+  margin: 2rem auto;
+  height: 40rem;
+  text-align: center;
+  border-radius: 10px;
+  position: relative;
+}
+
+#main-form {
+  position: absolute;
+  left: 50%;
+  top: 45%;
+  z-index: 5;
+}
+
+.table-main {
+  border: #252b33;
+  text-align: left;
+}
+
+.cta {
+  border: 1px red solid;
+  padding: 2rem;
+  text-align: center;
+  height: 6rem;
+  background-color: #ff0000;
+  color: #faf9f6;
+}
+
+.cta-header {
+  width: 80%;
+  float: right;
+}
+
+.cta-title {
+  text-transform: uppercase;
+  font-size: 2rem;
+}
+
+.cta-btn {
+  font-size: 1rem;
+  margin-left: 2rem;
+  margin-bottom: 2rem;
+  padding: 1rem 3rem;
+  border: 1px #faf9f6 solid;
+  border-radius: 10px;
+}

@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Sign Up</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+    <script defer src="./main.js"></script>
+  </head>
+
+  <body>
+    <nav class="navbar">
+      <div class="navbar-logo">
+        <a href="./index.html">
+          <img
+            src="./images/abstract-2726482_640.png"
+            alt="Texas map logo"
+            height="40"
+          />
+        </a>
+      </div>
+      <div class="navbar-links">
+        <a href="./index.html">Home</a>
+        <a href="#">About</a>
+        <a href="#">FAQ</a>
+        <a href="#">Contact Us</a>
+      </div>
+    </nav>
+    <div class="container">
+      <aside class="sidebar">
+        <h3>Cities of Texas</h3>
+        <div class="sidebar-links">
+          <a href="./capital.html" target="_blank">Austin (capital)</a>
+          <a href="./sanantonio.html" target="_blank">San Antonio</a>
+          <a href="./houston.html" target="_blank">Houston</a>
+        </div>
+      </aside>
+      <div class="main-form-container">
+        <header class="main-header">
+          <h1>Join the family!</h1>
+        </header>
+       
+      </div>
+      <section id="main-form">
+        <form id="my-form">
+          <label for="firstName">First Name:</label><br />
+          <input type="text" id="firstName" name="firstName" placeholder="First Name" required /><br />
+
+          <label for="lastName">Last Name:</label><br />
+          <input type="text" id="lastName" name="lastName" placeholder="Last Name" required /><br />
+
+          <label for="email">Email Address:</label><br />
+          <input
+            type="email"
+            id="email"
+            name="email"
+            value=""
+            placeholder="Email Address"
+            required
+          /><br />
+
+          <label for="confirmEmail">Confirm Email Address:</label><br />
+          <input
+            type="email"
+            id="confirmEmail"
+            name="confirmEmail"
+            placeholder="Email Address"
+            required
+          /><br />
+
+          <label for="question">Have a question?</label><br />
+          <textarea
+            id="question"
+            name="question"
+            rows="4"
+            cols="50"
+            placeholder="Send us your questions!"
+            required
+          ></textarea
+          ><br />
+          
+
+          <input id="sub-btn" class="cta-btn" type="submit" value="Submit" />
+        </form>
+      </section>
+    </div>
+  </body>
+</html>
