@@ -39,7 +39,7 @@ textarea {
   justify-content: flex-end;
   text-transform: uppercase;
   background-color: #fafafae6;
-  box-shadow: 0 0px 5px rgba(109, 109, 109, 0.7);
+  /* box-shadow: 0 0px 5px rgba(109, 109, 109, 0.7); */
 }
 
 .navbar-logo {
@@ -95,7 +95,6 @@ textarea {
   align-items: center;
   flex-direction: column;
   margin: 0 auto;
-  z-index: -1000;
   color: #252b33;
   position: relative;
   padding: 1rem 3rem;
@@ -106,6 +105,7 @@ textarea {
   padding: 4rem 2rem 1rem;
   text-align: center;
   margin-bottom: 0;
+  z-index: 2000;
 }
 
 .main-header h1 {
