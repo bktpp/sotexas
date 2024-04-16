@@ -29,6 +29,11 @@ textarea {
   margin-bottom: 10px;
 }
 
+cite {
+  font-size: 0.8rem;
+  display: inline-block;
+}
+
 .navbar {
   gap: 3rem;
   display: flex;
@@ -117,6 +122,12 @@ textarea {
 
 .main-caption {
   font-size: 0.9rem;
+}
+
+.main-images {
+  display: flex;
+  justify-content: space-around;
+  width: 100%;
 }
 
 .info-list {
